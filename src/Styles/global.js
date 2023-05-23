@@ -5,6 +5,7 @@ export const GlobalStyles = createGlobalStyle`
 
 *{
     box-sizing:border-box;
+    // overflow-x:hidden;
 }
 
 body{
@@ -13,6 +14,7 @@ body{
     margin:0;
     transition: all 0.25s linear;
     color:${({theme})=>theme.textColor};
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .footer{
@@ -181,6 +183,55 @@ body{
     margin-right:auto;
 }
 
+.user-profile{
+    width:1000px;
+    margin:auto;
+    display:flex;
+    height:15rem;
+    background: ${({theme})=> theme.typeBoxText};
+    border-radius :20px;
+    padding:1rem;
+    justify-content:center;
+    align-items:center;
+}
 
+.user{
+    width:50%;
+    display:flex;   
+
+    font-size:1.5rem;
+    // padding:1rem;
+    border-right:2px solid;
+    padding-right:1rem;
+}
+.picture{
+    width:40%;
+    margin:auto;
+}
+
+.info{
+    width:60%;
+    padding:1rem;
+    margin-top:10px;
+}
+
+.total-tests{
+    width:50%;
+    aligh-items:center;
+    font-size:2rem;
+}
+
+.table, .graph-user-data{
+    margin:auto;
+    width:1000px;
+}
+
+.center-of-screen{
+    display:flex;
+    min-height:100vh;
+    justify-content:center;
+    align-items:center;
+    
+}
 
 `

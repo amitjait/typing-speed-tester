@@ -3,8 +3,9 @@ import React, { useState } from "react";
 import { useTheme } from "styled-components";
 import { auth } from "../firebaseConfigu";
 import { toast } from "react-toastify";
+import errorMapping from "../Utils/erroMapping";
 
-const SignUpForm = () =>{
+const SignUpForm = ({handleClose}) =>{
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -52,8 +53,9 @@ const SignUpForm = () =>{
                 progress: undefined,
                 theme: "light",
                 });
+                handleClose();
         }).catch((e)=>{
-            toast.error('Not Able to create user', {
+            toast.error(errorMapping[e.code] || 'Some Error Occured', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -66,6 +68,8 @@ const SignUpForm = () =>{
         })
     }
 
+    
+    
     return (
         <Box p={3}
             style={{
@@ -79,6 +83,17 @@ const SignUpForm = () =>{
                 type="email"
                 label="Enter Your Email"
                 onChange={(e)=>setEmail(e.target.value)}
+                InputLabelProps={{
+                    style:{
+                        color:theme.textColor
+                    }
+                    }
+                }
+                InputProps={{
+                    style:{
+                        color:theme.textColor
+                    }
+                }}
             />
             <TextField
              variant="outlined"

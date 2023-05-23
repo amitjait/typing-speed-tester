@@ -1,11 +1,11 @@
-import { BorderAllOutlined } from "@mui/icons-material";
 import { Box, Button, TextField } from "@mui/material";
 import React, { useState } from "react";
 import { useTheme } from "styled-components";
 import { auth } from "../firebaseConfigu";
 import { toast } from "react-toastify";
+import errorMapping from "../Utils/erroMapping";
 
-const LoginForm = () =>{
+const LoginForm = ({handelClose}) =>{
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -37,8 +37,9 @@ const LoginForm = () =>{
                 progress: undefined,
                 theme: "light",
                 });
+                handelClose();
         }).catch((e)=>{
-            toast.error('Invalid credentials', {
+            toast.error(errorMapping[e.code] || 'Some Error Occured', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -50,6 +51,8 @@ const LoginForm = () =>{
                 });
         })
     }
+
+    // handleClose();
 
     return (
         <Box p={3}
