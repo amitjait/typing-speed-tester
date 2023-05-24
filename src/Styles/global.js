@@ -5,7 +5,7 @@ export const GlobalStyles = createGlobalStyle`
 
 *{
     box-sizing:border-box;
-    // overflow-x:hidden;
+    overflow-x:hidden;
 }
 
 body{
@@ -210,9 +210,11 @@ body{
 }
 
 .info{
-    width:60%;
+    width:70%;
     padding:1rem;
     margin-top:10px;
+    text-align:left;
+    margin-left:-2rem;
 }
 
 .total-tests{

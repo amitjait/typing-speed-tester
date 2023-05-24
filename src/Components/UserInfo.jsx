@@ -11,7 +11,7 @@ const UserInfo = ({totalTest})=>{
         <div className="user-profile">
             <div className="user">
                 <div className="picture">
-                    <AccountCircleIcon style={{displa:'block', transform:'scale(6)'}}/>
+                    <AccountCircleIcon style={{fontSize:"130px"}}/>
                 </div>
                 <div className="info">
                     <div className="email">
