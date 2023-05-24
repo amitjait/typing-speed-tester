@@ -21,13 +21,12 @@ const Footer = () => {
             <div className="links">
                 <div className="linkedin link" > 
                     {// eslint-disable-next-line jsx-a11y/anchor-has-content
-                    <a href="https://www.linkedin.com/in/amit-kumar-775311aa/" target="blank"><i class="fa fa-linkedin" aria-hidden="true" style={{color:"white"}}></i></a>}
+                    <a href="https://www.linkedin.com/in/amit-kumar-775311aa/" target="blank"><i class="fa fa-linkedin link" aria-hidden="true" ></i></a>}
                 </div>
                 <div className="resume link" >
                     {// eslint-disable-next-line jsx-a11y/anchor-has-content
-                    <a href="https://drive.google.com/file/d/1vbSwI68BEKH95_5EaE5O_sUIZFWG8VRU/view?usp=share_link" target="blank"><i class="fa fa-file" aria-hidden="true"></i></a>}
+                    <a href="https://drive.google.com/file/d/1vbSwI68BEKH95_5EaE5O_sUIZFWG8VRU/view?usp=share_link" target="blank"><i class="fa fa-file link" aria-hidden="true"></i></a>}
                 </div>
-                
             </div>
             <div className="themeButton">
                 {console.log("value",value.lable)}

@@ -236,4 +236,8 @@ body{
     
 }
 
+.link{
+    color:${({theme})=> theme.typeBoxText};
+}
+
 `
