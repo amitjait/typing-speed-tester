@@ -25,6 +25,7 @@ const UserPage = ()=>{
         .orderBy("timeStamp", "desc")
         .get()
         .then((snapshot)=>{
+            // eslint-disable-next-line
             snapshot.docs.map((doc)=>{
                 tempData.push({...doc.data()})
                 tempGraphData.push([doc.data().timeStamp.toDate().toLocaleString().split(",")[0], doc.data().wpm])

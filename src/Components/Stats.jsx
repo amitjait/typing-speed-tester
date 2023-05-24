@@ -83,6 +83,7 @@ const Stats = ({wpm, accuracy, correctChars, incorrectChars, missedChars, extraC
                 });
             return;
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
     return (
