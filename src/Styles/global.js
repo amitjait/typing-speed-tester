@@ -5,7 +5,7 @@ export const GlobalStyles = createGlobalStyle`
 
 *{
     box-sizing:border-box;
-    overflow-x:hidden;
+    // overflow-x:hidden;
 }
 
 body{
