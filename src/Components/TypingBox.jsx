@@ -204,11 +204,16 @@ const TypingBox = ()=>{
 
     useEffect(()=>{
         resetTest();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [testTime]); 
 
-    useEffect(()=>{
+    const handleEffect = ()=>{
         focusInput();
         wordSpanRef[currWordIndex].current.childNodes[currCharIndex].className = 'current'; 
+    }
+    useEffect(()=>{
+        handleEffect();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     

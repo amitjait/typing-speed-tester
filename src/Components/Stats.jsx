@@ -6,6 +6,7 @@ import { auth, db } from "../firebaseConfigu";
 const Stats = ({wpm, accuracy, correctChars, incorrectChars, missedChars, extraChars, graphData})=>{
 
     const timeSet = new Set();
+    // eslint-disable-next-line
     const newGraph = graphData.filter(i=>{
         if(!timeSet.has(i[0])){
             timeSet.add(i[0]);
