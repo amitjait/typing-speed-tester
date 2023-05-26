@@ -76,7 +76,7 @@ const AccountCircle = ()=>{
 
         return (
         <div >
-            <AccountCircleIcon onClick={handleOpen}/>
+            <AccountCircleIcon onClick={handleOpen} style={{cursor: "pointer"}}/>
             {user && <LogoutIcon onClick={logOut} />}
             <Modal open={open} onClose={handleClose}
                 style={{

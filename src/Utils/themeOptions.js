@@ -1,13 +1,13 @@
 
 const darkTheme = {
-    lable : 'Dark',
+    label : 'Dark',
     background : 'black',
     textColor : 'white',
     typeBoxText : 'grey'
 }
 
 const blueTheme = {
-    lable : 'Blue',
+    label : 'Blue',
     background : 'blue',
     textColor : 'skyblue',
     typeBoxText : 'white'
@@ -72,14 +72,16 @@ const purpleTheme = {
   
   
 export const themeOptions = [
-    {label:'Dark', value : darkTheme},
-    {label:'Green', value : greenTheme},
+    {label:'Dark', value:darkTheme},
     {label:"Blue", value:blueTheme},
+    {label:'Green', value:greenTheme},
     {label:"Purple", value:purpleTheme},
     {label:"Red", value:redTheme},
     {label:"Yellow", value:yellowTheme},
     {label:"Light", value:lightTheme},
     {label:"Orange", value:orangeTheme},
-    {label:"GRay", value:grayTheme},
+    {label:"Gray", value:grayTheme},
     {label:"Pink", value:pinkTheme}
 ]
+
+// 

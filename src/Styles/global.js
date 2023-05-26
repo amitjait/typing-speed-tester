@@ -236,6 +236,10 @@ body{
     
 }
 
+AccountCircleIcon{
+    cursor: pointer;
+}
+
 .link{
     color:${({theme})=> theme.typeBoxText};
 }

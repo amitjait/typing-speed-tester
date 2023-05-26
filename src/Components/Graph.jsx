@@ -35,7 +35,8 @@ const Graph = ({graphData}) => {
                         {
                             data:graphData.map(i=>i[1]),
                             label:'WPM',
-                            borderColor:theme.textColor
+                            borderColor : theme.typeBoxText,
+                            backgroundColor: theme.textColor
                         }
                     ]
                 }
